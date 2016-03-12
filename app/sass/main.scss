@@ -7,7 +7,7 @@ html {
    line-height: 1.4;
 }
 body {
-  background-color: #F4F6F6;
+  background-color: #CCE3EB;
 }
 
 
@@ -32,7 +32,80 @@ Top Bar - Navigation
   font-size: 1em;
 
 }
+/******************************
+Videoscribe and Button
+******************************/
+.videoscribe {
+  height: 100%;
+  background-color: #353535;
+  border-style: solid;
+  border-color: #96EB00;
+  border-width: 3px;
+  // opacity: 0.3;
+  h1{
+    font-family: 'Gill Sans';
+    font-weight: 300;
+    strong{ font-weight: 500; }
+    color: #aaa;
+  }
+}
+.button1{
+  display: inline-block;
+  padding: 10px 35px;
+  margin: 0.25em 0;
+  position: relative;
+  text: {
+    decoration: none;
+    transform: uppercase;
+  }
+  font: {
+    weight: 600;
+  }
+  color: #96EB00;
 
+  &:before{
+    content: '';
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    border: solid 3px #aaa;
+    transform: perspective( 350px ) rotateX( 0deg );
+  }
+
+  &:hover{
+
+    &:before{
+      transition: 0.35s ease all;
+      transform: perspective( 350px ) rotateX( -180deg );
+    }
+  }
+
+  /**
+  FULL-FLIP DEMO STYLES
+  **/
+
+  &.button-full-flip{
+
+    &:before{
+      transition: 0.35s ease all;
+    }
+  }
+
+  /**
+  FADE DEMO STYLES
+  **/
+
+  &.button-fade{
+    transition: 0.35s ease color;
+
+    &:hover{
+      color: #00457c;
+
+      &:before{
+        border-color: transparent;
+      }
+    }
+  }
+}
 /******************************
 Device,Account,Movement Cards
 ******************************/

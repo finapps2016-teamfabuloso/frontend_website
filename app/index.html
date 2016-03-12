@@ -31,10 +31,14 @@
       </section>
     </nav>
   </div> <!--Top-Bar Navigation End-->
+  <div class="videoscribe">
+    <h1>Lets <strong>check</strong> it <strong>out</strong>...&nbsp;&nbsp;<a href="#device" class="button1 button-full-flip button-fade">Demo</a></h1>
+
+  </div>
 
   <br><br><br>
 
-  <div ng-controller="DevicesCtrl" class="row"> <!--User Devices Start-->
+  <div id="device" ng-controller="DevicesCtrl" class="row"> <!--User Devices Start-->
     <div class="small-8 medium-6 large-11 small-centered columns">
       <div class="header panel">
         <div class="sign">
@@ -70,7 +74,7 @@
             <th>Credit Card # | PGP Key | PayPal Account</th>
           </tr>
           <tr ng-repeat="account in accounts">
-            <td>{{ account.name }}</td>
+            <td><img src="{{account.image_url}}" alt="" /></td>
             <td>{{ account.ccn }}</td>
           </tr>
         </table>
