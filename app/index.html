@@ -38,26 +38,12 @@
         <div class="sign">
           <h1>Tino Mantella's Devices</h1>
         </div>
-        <ul class="userdevice">
-          <li>Device: android</li>
+        <ul class="userdevice" ng-repeat="device in devices">
+          <li>Device: {{device.platform}}</li>
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          <li>Type: mobile</li>
+          <li>Type: {{device.category}}</li>
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          <li>Device ID: 3489399843298sdfds4723</li>
-        </ul>
-        <ul class="userdevice">
-          <li>Device: android</li>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          <li>Type: mobile</li>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          <li>Device ID: 3489399843298sdfds4723</li>
-        </ul>
-        <ul class="userdevice">
-          <li>Device: android</li>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          <li>Type: mobile</li>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          <li>Device ID: 3489399843298sdfds4723</li>
+          <li>Device ID: {{device.serial}}</li>
         </ul>
       </div>
     </div>
@@ -65,6 +51,7 @@
 
   <!--Vendors-->
   <script src="js/vendor/angular.js"></script>
+  <script src="js/vendor/underscore.js"></script>
   <!--Main-->
   <script src="js/main.js"></script>
   <!--Controllers and Services-->
