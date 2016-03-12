@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello, World</title>
+  <link rel="stylesheet" type="text/css" href="css/vendor/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/vendor/foundation.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body ng-app="finApp">
+  <div id="navbar" > <!--Top-Bar Navigation Start-->
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#"><img src="img/globalpalogo.png" alt="Global Pay Logo" id="globalpalogo"/>&nbsp;&nbsp;Global Payments Inc</a></h1>
+        </li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="has-dropdown">
+            <a href="#"><img src="img/tinomantella.png" alt="Tino Mantella" id="tinoimg"/></a>
+            <ul class="dropdown">
+              <li><a href="#">First link in dropdown</a></li>
+              <li class="active"><a href="#">Active link in dropdown</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </div> <!--Top-Bar Navigation End-->
+
+  <br><br><br><br><br>
+
+  <!--Templates will fall in after-->
+  <div ui-view></div>
+
+  <!--Vendors-->
+  <script src="js/vendor/angular.js"></script>
+  <!--Main-->
+  <script src="js/main.js"></script>
+  <!--Controllers and Services-->
+  <script src="userdevice/device.ctrl.js"></script>
+  <script src="userdevice/device.serv.js"></script>
+  <script src="useracct/account.ctrl.js"></script>
+  <script src="useracct/account.serv.js"></script>
+  <script src="usermovement/movement.ctrl.js"></script>
+  <script src="usermovement/movement.serv.js"></script>
+
+
+</body>
+</html>

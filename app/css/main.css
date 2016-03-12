@@ -1,0 +1,25 @@
+/******************************
+Initialize the body structure
+******************************/
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4; }
+
+/**********************
+Top Bar - Navigation
+**********************/
+.top-bar {
+  background-color: #00457c; }
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background: #00457c; }
+
+#tinoimg {
+  border-radius: 50%; }
+
+/************************
+Users Devices Supported
+************************/
+ul.userdevice li {
+  display: inline; }
