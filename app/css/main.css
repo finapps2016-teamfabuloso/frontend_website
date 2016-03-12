@@ -6,11 +6,15 @@ html {
   font-size: 1em;
   line-height: 1.4; }
 
+body {
+  background-color: #F4F6F6; }
+
 /**********************
 Top Bar - Navigation
 **********************/
 .top-bar {
-  background-color: #00457c; }
+  background-color: #00457c;
+  padding-bottom: 3em; }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
   background: #00457c; }
@@ -18,8 +22,24 @@ Top Bar - Navigation
 #tinoimg {
   border-radius: 50%; }
 
-/************************
-Users Devices Supported
-************************/
-ul.userdevice li {
-  display: inline; }
+.globalheader {
+  font-family: 'Playfair Display', serif; }
+
+.username {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em; }
+
+/******************************
+Device,Account,Movement Cards
+******************************/
+h1 {
+  font-family: 'Playfair Display', serif; }
+
+h2 {
+  font-family: 'Playfair Display', serif; }
+
+th {
+  font-family: 'Oswald', sans-serif; }
+
+td {
+  font-family: 'Oswald', sans-serif; }

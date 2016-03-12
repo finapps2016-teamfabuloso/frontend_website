@@ -6,7 +6,7 @@
     .service('AccountServ', ['SERVER', '$http',
       function (SERVER, $http) {
 
-        console.log('This is the Account Service');
+        // console.log('This is the Account Service');
         var endpoint = SERVER.URL;
 
         this.getUserAccounts = function (res) {

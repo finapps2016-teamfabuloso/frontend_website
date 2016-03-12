@@ -2,6 +2,8 @@
 <html>
 <head>
   <title>Hello, World</title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" href="css/vendor/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/vendor/foundation.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -11,7 +13,7 @@
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
         <li class="name">
-          <h1><a href="#"><img src="img/globalpalogo.png" alt="Global Pay Logo" id="globalpalogo"/>&nbsp;&nbsp;Global Payments Inc</a></h1>
+          <h1 class="globalheader"><a href="#"><img src="img/globalpalogo.png" alt="Global Pay Logo" id="globalpalogo"/>&nbsp;&nbsp;Global Payments Inc</a></h1>
         </li>
       </ul>
 
@@ -19,10 +21,10 @@
         <!-- Right Nav Section -->
         <ul class="right">
           <li class="has-dropdown">
-            <a href="#"><img src="img/tinomantella.png" alt="Tino Mantella" id="tinoimg"/></a>
+            <a href="#"><span class="username">Tino Mantella</span>&nbsp;&nbsp;&nbsp;<img src="img/tinomantella.png" alt="Tino Mantella" id="tinoimg"/></a>
             <ul class="dropdown">
-              <li><a href="#">First link in dropdown</a></li>
-              <li class="active"><a href="#">Active link in dropdown</a></li>
+              <li class="active"><a href="#">Manage Account</a></li>
+              <li class="active"><a href="#">Sign Out</a></li>
             </ul>
           </li>
         </ul>
@@ -30,13 +32,13 @@
     </nav>
   </div> <!--Top-Bar Navigation End-->
 
-  <br><br><br><br><br>
+  <br><br><br>
 
   <div ng-controller="DevicesCtrl" class="row"> <!--User Devices Start-->
     <div class="small-8 medium-6 large-11 small-centered columns">
       <div class="header panel">
         <div class="sign">
-          <h1>Tino Mantella's Devices</h1>
+          <h2>Tino Mantella's Devices</h2>
         </div>
         <table style="width: 100%;">
           <tr>
@@ -54,13 +56,13 @@
     </div>
   </div><!--User Devices End-->
 
-  <br><br><br><br><br>
+  <br><br><br>
 
   <div ng-controller="AccountCtrl" class="row"> <!--User Accounts Start-->
     <div class="small-8 medium-6 large-11 small-centered columns">
       <div class="header panel">
         <div class="sign">
-          <h1>Accounts</h1>
+          <h2>Accounts</h2>
         </div>
         <table style="width: 100%;">
           <tr>
@@ -76,22 +78,24 @@
     </div>
   </div><!--User Accounts End-->
 
-  <br><br><br><br><br>
+  <br><br><br>
 
   <div ng-controller="MovementCtrl" class="row"> <!--User Movements Start-->
     <div class="small-8 medium-6 large-11 small-centered columns">
       <div class="header panel">
         <div class="sign">
-          <h1>Movements</h1>
+          <h2>Movements</h2>
         </div>
         <table style="width: 100%;">
           <tr>
             <th>Date</th>
+            <th>Time</th>                   
             <th>Item</th>
             <th>Amount</th>
           </tr>
           <tr ng-repeat="movement in movements">
-            <td>{{ movement.created_at }}</td>
+            <td>{{ movement.date }}</td>
+            <td>{{ movement.time }}</td>
             <td>{{ movement.item }}</td>
             <td>$ {{ movement.price }}</td>
           </tr>

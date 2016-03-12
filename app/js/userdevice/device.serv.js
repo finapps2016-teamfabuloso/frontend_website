@@ -6,7 +6,7 @@
     .service('DeviceServ', ['SERVER', '$http',
       function (SERVER, $http) {
 
-        console.log('This is the Device Service');
+        // console.log('This is the Device Service');
         var endpoint = SERVER.URL;
 
         this.getUserDevices = function (res) {
