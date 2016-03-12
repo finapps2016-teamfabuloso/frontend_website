@@ -38,13 +38,18 @@
         <div class="sign">
           <h1>Tino Mantella's Devices</h1>
         </div>
-        <ul class="userdevice" ng-repeat="device in devices">
-          <li>Device: {{device.platform}}</li>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          <li>Type: {{device.category}}</li>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          <li>Device ID: {{device.serial}}</li>
-        </ul>
+        <table style="width: 100%;">
+          <tr>
+            <th>Platform</th>
+            <th>Category</th>
+            <th>Device ID</th>
+          </tr>
+          <tr ng-repeat="device in devices">
+            <td>{{ device.platform }}</td>
+            <td>{{ device.category }}</td>
+            <td>{{ device.serial }}</td>
+          </tr>
+        </table>
       </div>
     </div>
   </div><!--User Devices End-->
