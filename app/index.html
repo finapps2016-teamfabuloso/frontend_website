@@ -54,6 +54,52 @@
     </div>
   </div><!--User Devices End-->
 
+  <br><br><br><br><br>
+
+  <div ng-controller="AccountCtrl" class="row"> <!--User Accounts Start-->
+    <div class="small-8 medium-6 large-11 small-centered columns">
+      <div class="header panel">
+        <div class="sign">
+          <h1>Accounts</h1>
+        </div>
+        <table style="width: 100%;">
+          <tr>
+            <th>Account type</th>
+            <th>Credit Card # | PGP Key | PayPal Account</th>
+          </tr>
+          <tr ng-repeat="account in accounts">
+            <td>{{ account.name }}</td>
+            <td>{{ account.ccn }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div><!--User Accounts End-->
+
+  <br><br><br><br><br>
+
+  <div ng-controller="MovementCtrl" class="row"> <!--User Movements Start-->
+    <div class="small-8 medium-6 large-11 small-centered columns">
+      <div class="header panel">
+        <div class="sign">
+          <h1>Movements</h1>
+        </div>
+        <table style="width: 100%;">
+          <tr>
+            <th>Date</th>
+            <th>Item</th>
+            <th>Amount</th>
+          </tr>
+          <tr ng-repeat="movement in movements">
+            <td>{{ movement.created_at }}</td>
+            <td>{{ movement.item }}</td>
+            <td>$ {{ movement.price }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div><!--User Movements End-->
+
   <!--Vendors-->
   <script src="js/vendor/angular.js"></script>
   <script src="js/vendor/underscore.js"></script>
