@@ -47,6 +47,9 @@ Videoscribe and Button
     font-weight: 300;
     strong{ font-weight: 500; }
     color: #aaa;
+    float: right;
+    margin-right:5%;
+    margin-top: 2.5%;
   }
 }
 .button1{
@@ -105,6 +108,10 @@ Videoscribe and Button
       }
     }
   }
+}
+.appchart img{
+  margin-left: 8%;
+  width:80%;
 }
 /******************************
 Device,Account,Movement Cards

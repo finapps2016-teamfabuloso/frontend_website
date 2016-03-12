@@ -41,7 +41,10 @@ Videoscribe and Button
   .videoscribe h1 {
     font-family: 'Gill Sans';
     font-weight: 300;
-    color: #aaa; }
+    color: #aaa;
+    float: right;
+    margin-right: 5%;
+    margin-top: 2.5%; }
     .videoscribe h1 strong {
       font-weight: 500; }
 
@@ -80,6 +83,10 @@ Videoscribe and Button
       color: #00457c; }
       .button1.button-fade:hover:before {
         border-color: transparent; }
+
+.appchart img {
+  margin-left: 8%;
+  width: 80%; }
 
 /******************************
 Device,Account,Movement Cards
