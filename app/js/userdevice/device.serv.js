@@ -13,10 +13,6 @@
           return $http.get(endpoint + '/devices', SERVER.CONFIG);
         };
 
-
-
-
-
       }
     ]);
 }());
